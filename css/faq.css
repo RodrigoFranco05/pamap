@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+
+    font-family: "Itim",sans-serif;
+}
+
+/* --------------- MAIN ----------------*/
+
+body{
+    background-color: #F4EEDC;
+    text-align: center;
+
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.faq{
+    background-color: rgb(189,174,153);
+    display:flex;
+    flex-direction: column;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    align-items: center;
+    margin: 200px 0 100px;
+    width: 80%;
+}
+
+.faq h2{
+   
+    background-color: rgb(131, 110, 85);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    padding: 30px 30px;
+    
+    font-size: xx-large;
+
+    width: 100%;
+
+    margin : 80px;
+}
+
+.faq h3{
+    
+    background-color: rgb(152,127,97);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    padding: 15px 15px;
+    
+
+    width: 80%;
+}
+
+.faq p{
+    
+    background-color: rgb(201,192,177);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    
+    padding: 10px;
+    width: 70%;
+    margin :30px;
+}

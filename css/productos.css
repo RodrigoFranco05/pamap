@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+
+    font-family: "Itim",sans-serif;
+}
+
+/* --------------- MAIN ----------------*/
+
+body{
+    background-color: #cdcdc0;
+    text-align: center;
+
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.productos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    margin: 200px 0 100px ;
+    padding-bottom: 50px;
+
+    width: 90%;
+    background-color: rgb(189,174,153);
+    border-radius: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.productos h2{
+    margin: 100px 0;
+    padding: 30px 30px;
+    width: 100%;
+    
+    background-color: rgb(131, 110, 85);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.productos_1, .productos_2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+
+}
+
+.card{
+    background-color: rgb(201,192,177);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.card a{
+    background-color: rgb(74,51,35);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    border-color: rgb(74,51,35);
+}

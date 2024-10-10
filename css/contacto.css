@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+
+    font-family: "Itim",sans-serif;
+}
+
+/* --------------- MAIN ----------------*/
+body{
+    background-color: rgb(209, 205, 196);
+    text-align: center;
+
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario{
+    margin: 200px 0 100px ;
+
+
+    display: flex;
+    justify-content: flex-end;
+    
+    align-items: center;
+
+    width: 90%;
+    background-color: rgb(175,160,137);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+
+    background-image: url('../source/img/modern-macrame-4.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.formulario h2{
+    margin: 20px 0;
+    padding: 10px 20px;
+    
+   
+   
+}
+
+.formulario div{
+    width: 60%;
+    height: 80%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    padding-bottom: 20px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: rgba(175,160,137);
+}
+
+form{
+    width: 90%;
+    
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form .div_form{
+    width: 100%;
+    height: 70%;
+    
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 10px;
+
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0);
+
+    font-size: 1.5vw;
+
+    
+}
+
+.div_form input, .div_form textarea{
+    border: 3px;
+    border-style: solid;
+    border-color: rgb(74,51,35);
+    
+}
+
+textarea{
+    height: 100px;
+}
+
+
+.formulario button{
+   
+    font-size: medium;
+    padding: 5px 10px;
+    font-weight: 400;
+    background-color: #593e25;
+    box-shadow: 0 0 15px rgb(0, 0, 0, 0.5);
+
+    border: 0;
+
+    color: white;
+    text-decoration: none;
+}
+
+
+
+/* #F4EEDC  rgb(74,51,35)*/
