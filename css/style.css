@@ -331,14 +331,11 @@ footer section{
 
 .info_2 a {
     background-color: #bdae99;
-    width: 300px;
-    height: 300px;
     padding: 2%;
     box-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
 }
 
 .info_2 a img{
-    height: 100%;
     width: 100%;
 }
 
@@ -858,6 +855,154 @@ main{
 @media screen and (max-width: 500px){
     header .nav_paginas{
         width: 200px;
+    }
+}
+
+@media screen and (max-width: 890px){
+    .hero_section .hero_text h2{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 540px){
+    .hero_section .hero_text h2{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .index_img_productos .texto_galeria{
+        font-size: 20px;
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width: 880px){
+    .main_productos .productos_destacados{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+    }
+}
+
+
+@media screen and (max-width: 1100px){
+    .index_opiniones article img{
+        width: 70%;
+        height: 16.6%;
+    }
+}
+
+@media screen and (max-width: 710px){
+    .info_3{
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        gap: 70px;
+        align-items: flex-start;
+    }
+
+    
+}
+
+@media screen and (max-width: 1000px){
+    .info_1 h3{
+        font-size: x-large;
+    }
+
+    .info_1 p{
+        font-size: small;
+    }
+}
+
+@media screen and (max-width: 820px){
+    .info_1 h3{
+        font-size: large;
+    }
+
+    .info_1 p{
+        font-size: x-small;
+    }
+
+    .info_1 div{
+        margin-right: 3%;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .info_1 h3{
+        font-size: small;
+    }
+
+    .info_1 p{
+        font-size: xx-small;
+    }
+
+    .info_1 div{
+        margin-right: 0;
+    }
+}
+
+
+@media screen and (max-width: 930px){
+    .info_2 .info_2_texto, .info_3 .info_3_texto{
+        font-size: medium;
+    }
+}
+
+@media screen and (max-width: 630px){
+    .info_2 .info_2_texto, {
+        font-size: small;
+    }
+}
+
+@media screen and (max-width: 514px){
+    .info_2 .info_2_texto, {
+        font-size: xx-small;
+    }
+}
+
+@media screen and (max-width: 710px){
+    .info_2{
+        flex-wrap: wrap;
+        gap: 70px;
+        align-items: flex-start;
+    }
+
+    
+}
+
+@media screen and (max-width: 720px){
+    .index_datos h4{
+        font-size: medium;
+    }
+    .index_datos p{
+        font-size: small;
+    }
+}
+@media screen and (max-width: 400px){
+    .index_datos div{
+        flex-wrap:wrap ;
+        justify-content: center;
+    }
+    .main_index .index_datos div article{
+        width: 150px;
+        margin:0;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 580px){
+    .main_index .index_opiniones h4{
+        font-size: small;
+    }
+    .main_index .index_opiniones p{
+        font-size: x-small;
+    }
+}
+@media screen and (max-width: 700px){
+    .info_3 iframe{
+        width: 60vw;
+        height: 80vw;
     }
 }
 
