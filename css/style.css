@@ -634,7 +634,7 @@ form .div_form{
 
     box-shadow: 0 0 20px rgba(0, 0, 0, 0);
 
-    font-size: 1.5vw;
+    font-size: x-large;
 
     
 }
@@ -861,6 +861,34 @@ main{
     }
 }
 
+@media screen and (max-width: 900px){
+    main div form label{
+        font-size: large;
+    }
+}
+
+@media screen and (max-width: 740px){
+    main div form label{
+        font-size: medium;
+    }
+}
+
+@media screen and (max-width: 500px){
+    main .formulario{
+        display: block;
+    }
+    
+    main .formulario div{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    main .productos .productos_1,main .productos .productos_2 {
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+}
 
 /*
 body{
