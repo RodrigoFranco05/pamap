@@ -950,13 +950,13 @@ main{
 }
 
 @media screen and (max-width: 630px){
-    .info_2 .info_2_texto, {
+    .info_2 .info_2_texto {
         font-size: small;
     }
 }
 
 @media screen and (max-width: 514px){
-    .info_2 .info_2_texto, {
+    .info_2 .info_2_texto {
         font-size: xx-small;
     }
 }
