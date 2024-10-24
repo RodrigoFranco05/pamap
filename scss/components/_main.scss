@@ -1,0 +1,545 @@
+/*===========================================================*/
+/*                      INDEX                                */
+/*===========================================================*/
+
+/* --------------- MAIN ----------------*/
+
+.body_index{
+    background-color: #cdcdc0;
+    text-align: center;
+}
+
+.main_index{
+    display: block;
+}
+/* --------------- HERO ----------------*/
+
+.hero_section {
+    display: flex;
+
+    .imgs{
+        position: absolute;
+        z-index: -1;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    img{
+        object-fit: cover;
+    }
+
+    .hero_text {
+        margin: 20% auto;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 30px 50px;
+    
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+
+        h2{
+            font-size: 50px;
+            color: #cdcdc0;
+        }
+    }
+}
+
+/* --------------- Galeria ----------------*/
+
+.index_img_productos {
+    margin: 100px 15%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 40px;
+    justify-items: center;
+    align-items: center;
+
+    img{
+        width: 100%;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+    }
+}
+
+.texto_galeria {
+    position: absolute;
+    z-index: 2;
+    padding: 50px;
+    background-color: nth($color-paleta,4);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+    font-size: 40px;
+}
+
+
+/* --------------- INFORMACION ----------------*/
+
+.index_informacion {
+    display:flex;
+    
+    flex-direction: column;
+    margin:400px 20% 250px;
+}
+
+.index_informacion_decoration {
+    background-color: nth($color-paleta,1);
+    width: 8.8%;
+    height: 2000px;
+    position: absolute;
+    z-index: -1;
+    box-shadow: $shadow;
+    margin-left: 10%;
+}
+
+.info_1{
+    margin: 50px 0 200px; 
+    width: 60vw;
+    height: 33.75vw;
+    background-image: url(../source/img/info_image.jpg);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    box-shadow: $shadow;
+
+    @extend %flex-center;
+    justify-content: flex-end;
+    
+
+    div {
+        @extend %flex-center;
+        flex-direction: column;
+        
+    
+        margin-right: 8%;
+    }
+
+    h3{
+        margin-bottom: 40px;
+        font-size: 40px;
+    
+    }
+    
+    p{
+    
+        font-size: 20px;
+        width: 200px;
+    }
+}
+
+
+
+
+.info_2{
+    @extend %flex-center;
+    justify-content: space-between;
+    
+
+    .info_2_texto{
+        
+        height: 100%;
+        background-color: #bdae99;
+        text-align: center;
+        padding: 50px 30px;
+        font-size: 27px;
+        box-shadow: $shadow;
+        margin-right: 50px;
+    }
+
+    a {
+        background-color: #bdae99;
+        padding: 2%;
+        box-shadow: $shadow;
+
+        img{
+            width: 100%;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+.info_3{
+    margin-top: 300px;
+    @extend %flex-center;
+    justify-content: space-between;
+    
+
+    .info_3_texto{
+
+        height: 100%;
+        background-color: #bdae99;
+        text-align: center;
+        padding: 50px 30px;
+        font-size: 27px;
+        box-shadow: $shadow;
+    }
+
+    iframe {
+        background-color: #bdae99;
+        width: 500px;
+        height: 500px;
+        padding: 2%;
+        box-shadow: $shadow;
+        margin-right: 50px;
+    }
+}
+
+/* --------------- DATOS ----------------*/
+
+.index_datos{
+    background-color: nth($color-paleta,3);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    box-shadow: $shadow
+
+    h2{
+        margin:50px 0;
+        font-size: 40px; 
+    }
+    
+    div{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 5% 50px;
+    
+
+        article{
+            background-color: nth($color-paleta,2);
+            width: 30%;
+            box-shadow:$shadow;
+            @extend %flex-center;
+            flex-direction: column;
+            justify-content: space-around;
+            
+        }
+    }
+
+    .dato_2{
+        margin: 0 5%;
+    }
+
+    img{
+        height: 60px;
+        margin: 50px 0 30px;
+    }
+
+    h4{
+        font-weight: 600;
+        font-size: 30px;
+        margin: 0 2% 30px ;
+    }
+
+    p{
+        margin: 0 10% 30px;
+        font-size: 20px;
+    }
+}
+
+/* --------------- opiniones ----------------*/
+
+.index_opiniones{
+    margin: 100px 20%;
+    display: flex;
+    flex-direction: column;
+
+    article{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 70px;
+        width: 70%;
+        background-color: nth($color-paleta,7);
+        padding: 30px;
+        box-shadow: $shadow;
+        
+    }
+
+    .opinion_2{
+        align-items: flex-end;
+        align-self: flex-end;
+    }
+    
+    article {
+        p{
+        font-size: 25px;
+        }
+        img{
+            height: 70px;
+            margin-top:2%;
+        }
+        h4{
+            font-size: 30px;
+            margin: 3% 0 0 3%;
+        }
+    }
+}
+
+
+/*===========================================================*/
+/*===========================================================*/
+.main_productos{
+    
+
+    @extend %flex-center;
+    flex-direction: column;
+    text-align: center;
+
+   
+    margin-top: 100px;
+
+    h4{
+        margin: 30px 0 15px 0;
+        background-color: nth($color-paleta,1);
+        padding: 1% 2%;
+        
+        
+        font-size: 30px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        color: white;
+    }
+}
+
+.productos_destacados{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+
+
+
+/*===========================================================*/
+/*                      PRODUCTOS                            */
+/*===========================================================*/
+.productos{
+    @extend %flex-center;
+    flex-direction: column;
+
+
+    margin: 200px 0 100px ;
+    padding-bottom: 50px;
+
+    width: 90%;
+    background-color: nth($color-paleta,4);
+    border-radius: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+
+    h2{
+        margin: 100px 0;
+        padding: 30px 30px;
+        width: 105%;
+        
+        background-color: nth($color-paleta,5);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    }
+}
+
+
+
+.productos_1, .productos_2{
+    @extend %flex-center;
+    justify-content: space-evenly;
+    width: 100%;
+
+}
+
+
+/*===========================================================*/
+/*                      CONTACTO                             */
+/*===========================================================*/
+
+.formulario{
+    margin: 200px 0 100px ;
+
+
+    @extend %flex-center;
+    justify-content: flex-end;
+
+    width: 90%;
+    background-color: nth($color-paleta,3);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+
+    background-image: url('../source/img/modern-macrame-4.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    
+    h2{
+        margin: 20px 0;
+        padding: 10px 20px;
+    }
+
+    div{
+        width: 60%;
+        height: 80%;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+        padding-bottom: 20px;
+    
+        @extend %flex-center;
+        flex-direction: column;
+    
+        background-color: rgb(175,160,137);
+    }
+
+    button{
+   
+        font-size: medium;
+        padding: 5px 10px;
+        font-weight: 400;
+        background-color: #593e25;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    
+        border: 0;
+    
+        color: white;
+        text-decoration: none;
+    }
+
+}
+
+form{
+    width: 90%;
+    
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+    .div_form{
+        width: 100%;
+        height: 70%;
+        
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 10px;
+    
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0);
+    
+        font-size: x-large;
+    
+        input, textarea{
+            border: 3px;
+            border-style: solid;
+            border-color: nth($color-paleta,1);
+            
+        }
+
+        textarea{
+            height: 100px;
+        }
+    }
+}
+
+
+/*===========================================================*/
+/*                      FAQ                                  */
+/*===========================================================*/
+
+
+.faq{
+    background-color: nth($color-paleta,4);
+    display:flex;
+    flex-direction: column;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    align-items: center;
+    margin: 200px 0 100px;
+    width: 80%;
+
+    h2{
+   
+        background-color: rgb(131, 110, 85);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+        padding: 30px 30px;
+        
+        font-size: xx-large;
+    
+        width: 100%;
+    
+        margin : 80px;
+    }
+
+    h3{
+    
+        background-color: nth($color-paleta,2);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+        padding: 15px 15px;
+        
+    
+        width: 80%;
+    }
+
+    p{
+    
+        background-color: nth($color-paleta,5);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+        
+        padding: 10px;
+        width: 70%;
+        margin :30px;
+    }
+}
+
+
+/*===========================================================*/
+/*                      PRODUCTO                             */
+/*===========================================================*/
+
+.main_producto{
+    @extend %flex-center;
+    flex-direction: column;
+    justify-content: center;
+
+    h4{
+        margin: 30px 0 15px 0;
+        background-color: rgba(89, 62, 37,0.6);
+        padding: 1% 2%;
+        
+        
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        color: white;
+    }
+}
+
+.producto{
+    @extend %flex-center;
+    justify-content: space-between;
+    margin: 200px 0 100px ;
+   
+    width: 85%;
+    
+    background-color: nth($color-paleta,4);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+
+    img{
+        margin: 1%;
+        width: 50%;
+        border: 10px solid nth($color-paleta,1);
+        
+    }
+
+    h2{
+        margin :30px;
+    
+    }
+    p{
+        margin: 30px;
+    
+    }
+
+}
+
+.info_articulo{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.productos_similares{
+    display: flex;
+    
+    margin-bottom: 50px;
+}

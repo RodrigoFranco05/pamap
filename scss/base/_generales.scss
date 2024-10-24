@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+
+    font-family: "Itim",sans-serif;
+}
+
+body{
+    background-color: #cdcdc0;
+    text-align: center;
+
+}
+
+main{
+    @extend %flex-center;
+    justify-content: center;
+}
+
+
+/* ------- BOOSTRAP -------- */
+
+.card{
+    background-color: nth($color-paleta,5);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    transition-duration: 1s;
+    
+    a{
+        background-color: nth($color-paleta,1);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+        border-color: nth($color-paleta,1);
+        }
+    
+    &:hover{
+        transform: scale(1.2);
+        
+    }
+}
+
+
+

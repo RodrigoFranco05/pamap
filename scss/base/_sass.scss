@@ -1,0 +1,11 @@
+$color-paleta: rgb(74,51,35),rgb(152,127,97),rgb(175,160,137),rgb(189,174,153),rgb(201,192,177),rgb(209, 205, 196),#F4EEDC;
+
+$bk-transparente:rgba(0, 0, 0, 0);
+
+
+%flex-center{
+    display:flex;
+    align-items: center;
+}
+
+$shadow: 0 0 10px rgba(0, 0, 0, 0.3);
