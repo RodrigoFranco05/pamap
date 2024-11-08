@@ -298,3 +298,22 @@
         }
     }
 }
+
+@media screen and (max-width: 590px){
+    .inicio{
+        width: 40%;
+
+        .main_div_registro{
+            h2{
+                font-size: 1em;
+            }
+
+            a{
+                
+                font-size: 0.8em;
+                padding: 7px;
+            }
+        }
+    }
+
+}

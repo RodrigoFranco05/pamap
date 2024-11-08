@@ -368,6 +368,76 @@ form {
   display: flex;
   margin-bottom: 50px; }
 
+/*===========================================================*/
+/*                      INICIO SEsION                        */
+/*===========================================================*/
+.inicio {
+  margin-top: 300px;
+  margin-bottom: 200px;
+  background-color: #bdae99;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 40%;
+  min-width: 240px;
+  min-height: 420px;
+  height: 75%;
+  box-shadow: 0px 30px 35px -30px rgba(0, 0, 0, 0.7);
+  border: 5px #4a3323 solid; }
+  .inicio .main_div_iniciosesion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.5em;
+    background-color: #bdae99; }
+    .inicio .main_div_iniciosesion h1 {
+      margin-bottom: 30px; }
+    .inicio .main_div_iniciosesion form {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      align-items: center; }
+      .inicio .main_div_iniciosesion form h3 {
+        text-align: center;
+        font-weight: 400;
+        font-size: 1em; }
+      .inicio .main_div_iniciosesion form .form_input {
+        display: flex;
+        align-items: center; }
+        .inicio .main_div_iniciosesion form .form_input img {
+          width: 30px;
+          height: 30px; }
+        .inicio .main_div_iniciosesion form .form_input input {
+          margin: 10px;
+          height: 30px;
+          border: none; }
+      .inicio .main_div_iniciosesion form a {
+        font-family: "Raleway", sans-serif;
+        font-size: 0.6em;
+        text-decoration: none;
+        color: white;
+        background-color: #4a3323;
+        padding: 10px;
+        width: fit-content; }
+  .inicio .main_div_registro {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .inicio .main_div_registro h2 {
+      font-family: "Raleway", sans-serif;
+      font-size: 1.5em;
+      margin-bottom: 10px; }
+    .inicio .main_div_registro a {
+      font-family: "Raleway", sans-serif;
+      font-size: 1.2em;
+      text-decoration: none;
+      color: white;
+      background-color: #4a3323;
+      padding: 10px; }
+
 header {
   display: flex;
   justify-content: center; }
@@ -424,6 +494,11 @@ header {
     header .nav_paginas a {
       color: white;
       text-decoration: none; }
+      header .nav_paginas a img {
+        height: 55px;
+        width: 55px; }
+    header .nav_paginas .inicioSesion {
+      margin: 0; }
 
 footer {
   height: 250px;
@@ -633,3 +708,12 @@ footer {
   main .productos .productos_1, main .productos .productos_2 {
     flex-wrap: wrap;
     gap: 50px; } }
+
+@media screen and (max-width: 590px) {
+  .inicio {
+    width: 40%; }
+    .inicio .main_div_registro h2 {
+      font-size: 1em; }
+    .inicio .main_div_registro a {
+      font-size: 0.8em;
+      padding: 7px; } }
