@@ -81,6 +81,10 @@
         padding: 30px;
         }
     }
+
+    .index_informacion{
+        margin: 100px 20% 250px;
+    }
 }
 
 @media screen and (max-width: 880px){
@@ -121,9 +125,6 @@
         h3{
         font-size: x-large;
         }
-        p{
-            font-size: small;
-        }
     }
 }
 
@@ -133,7 +134,7 @@
         font-size: large;
         }
         p{
-        font-size: x-small;
+        font-size: 1em;
         }
         div{
             margin-right: 3%;
@@ -143,17 +144,18 @@
 
 @media screen and (max-width: 750px){
     .info_1 {
-        h3{
-        font-size: small;
-        }
-
-        p{
-            font-size: xx-small;
-        }
-    
         div{
             margin-right: 0;
         }
+    }
+
+}
+
+@media screen and (max-width: 710px){
+    .info_1 {
+        justify-content: center;
+        background-color: nth($color-paleta,4);
+        background-image: none;
     }
 
 }
@@ -162,38 +164,26 @@
 @media screen and (max-width: 930px){
     .info_2 {
         .info_2_texto{
-        font-size: medium;
+        font-size: larger;
         }
     }
 
     .info_3 {
         .info_3_texto{
-        font-size: medium;
+        font-size: larger;
         }
     }
 }
 
-@media screen and (max-width: 630px){
-    .info_2 {
-        .info_2_texto {
-        font-size: small;
-        }
-    }
-}
-
-@media screen and (max-width: 514px){
-    .info_2 {
-        .info_2_texto {
-        font-size: xx-small;
-        }
-    }
-}
-
-@media screen and (max-width: 710px){
+@media screen and (max-width: 870px){
     .info_2{
-        flex-wrap: wrap;
+        flex-direction: column;
         gap: 70px;
         align-items: flex-start;
+
+        a{
+            width: 300px;
+        }
     }
 
     
@@ -201,46 +191,23 @@
 
 @media screen and (max-width: 720px){
     .index_datos {
-        h4{
-        font-size: medium;
+        
+        div{
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+
+        article{
+            margin: 0;
+            width: 70%;
         }
-        p{
-            font-size: small;
         }
     }
     
-}
-@media screen and (max-width: 400px){
-    
-    .main_index {
-        .index_datos {
-            div{
-                flex-direction: column;
-                align-items: center;
-
-            article{
-                width: 150px;
-                margin:0;
-                margin-bottom: 50px;
-            }
-            }
-
-        }
-    }
 }
 
 @media screen and (max-width: 580px){
-    .main_index {
-        .index_opiniones {
-            h4{
-                font-size: small;
-            }
-            p{
-                font-size: x-small;
-            }
-        }
-
-    }
+    
 }
 @media screen and (max-width: 700px){
     .info_3 {
